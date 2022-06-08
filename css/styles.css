@@ -92,6 +92,15 @@ a {
   outline: 2px solid blue;
 }
 
+.team-conteiner {
+  margin-bottom: 0;
+  padding: 94px 0;
+}
+
+.portfolio-container {
+  margin-bottom: 94px;
+}
+
 /* logo decorstion */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -109,6 +118,7 @@ a {
 .logo:focus > span {
   color: var(--footer-hover-color);
 }
+
 /* decoration fof logo in footer */
 .footer .second-word {
   color: var(--white-text-color);
@@ -199,6 +209,11 @@ a {
 }
 
 /* portfolio photo  */
+.filt-list {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .portfolio-list {
   font-size: 16px;
   line-height: 1.88;
@@ -206,12 +221,20 @@ a {
 }
 
 .portfolio-list .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.portfolio-list p {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .portfolio-list .link {
@@ -221,6 +244,11 @@ a {
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
   color: var(--accent-color);
+}
+
+.portfolio-list {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* button */
