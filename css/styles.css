@@ -318,10 +318,6 @@ button {
   line-height: 1.71;
 }
 
-/* .addres .addres-text {
-  color: var(--white-text-color);
-} */
-
 .addres .addres-link {
   color: var(--footer-link-color);
 }
@@ -331,6 +327,22 @@ button {
   color: var(--footer-hover-color);
 }
 
-/* .footer .logo {
-  color: var(--white-text-color);
+.footer-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 60px 0;
+}
+
+/* .footer-container .logo {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.addres p {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.addres a {
+  margin-top: 0;
+  margin-bottom: 9px;
+  background-color: #fff;
 } */
