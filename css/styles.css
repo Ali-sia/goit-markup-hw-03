@@ -50,6 +50,10 @@ body {
 }
 
 a {
+  /*-------------------*/
+  margin: 0;
+  padding: 0;
+  /*-------------------*/
   text-decoration: none;
 
   cursor: pointer;
@@ -78,6 +82,9 @@ a {
   overflow: hidden;
 }
 
+img {
+  display: block;
+}
 /*Навигация сайта*/
 
 .main-nav {
@@ -136,7 +143,7 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1200px; /*width: 1200px;*/
   outline: 2px solid blue;
   padding-left: 15px;
   padding-right: 15px;
@@ -294,18 +301,27 @@ a {
   margin-bottom: 30px;
 }
 
-/* portfolio photo  */
-.filt-list {
-  /* display: flex; */
+/* fiftr buttons */
 
+.filtr-list {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-/* .filt-list .item {
-  justify-items: center;
-} */
+.filtr-list .item:not(:nth-last-child(-n + 1)) {
+  margin-right: 8px;
+}
 
+/* portfolio photo  */
+
+.portfolio {
+  display: block;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -442,14 +458,14 @@ button {
 }
 
 .footer-container .logo {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
-  outline: #2196f3;
 }
 
-.addres a,
+.addres .addres-link,
 .addres p {
+  display: block;
   margin-top: 0;
   margin-bottom: 9px;
-  background-color: #f0f;
 }
