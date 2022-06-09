@@ -60,6 +60,8 @@ a {
 
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .visually-hidden {
@@ -86,10 +88,6 @@ a {
 .site-nav {
   display: flex;
   margin-left: 93px;
-}
-
-.site-nav .item {
-  outline: 1px solid #f0f;
 }
 
 .site-nav .item + .item {
@@ -140,8 +138,8 @@ a {
   margin-right: auto;
   width: 1200px;
   outline: 2px solid blue;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-conteiner {
@@ -171,7 +169,7 @@ a {
   color: var(--footer-hover-color);
 }
 
-/* decoration fof logo in footer */
+/*----------------- decoration fof logo in footer */
 .footer .second-word {
   color: var(--white-text-color);
 }
@@ -210,6 +208,17 @@ a {
   text-align: center;
 }
 
+/* features */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-list {
+  display: flex;
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -232,9 +241,12 @@ a {
   letter-spacing: 0.03em;
 }
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
 }
 
 /* team */
@@ -267,10 +279,30 @@ a {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+
+  background-color: #f0f;
 }
+.portfolio-list .item {
+  /* width: calc((100%-60px) / 3);
+  margin-right: 30px; */
+  width: calc(100% / 3);
+}
+
+/* .portfolio-list .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-list .item:not(nth-last-child(-n + 3)) {
+  margin-right: 30px;
+} */
 
 .portfolio-list .title {
   margin-top: 0;
@@ -296,11 +328,6 @@ a {
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
   color: var(--accent-color);
-}
-
-.portfolio-list {
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 /* button */
@@ -385,16 +412,15 @@ button {
   padding: 60px 0;
 }
 
-/* .footer-container .logo {
+.footer-container .logo {
   margin-top: 0;
   margin-bottom: 20px;
+  outline: #2196f3;
 }
+
+.addres a,
 .addres p {
   margin-top: 0;
   margin-bottom: 9px;
+  background-color: #f0f;
 }
-.addres a {
-  margin-top: 0;
-  margin-bottom: 9px;
-  background-color: #fff;
-} */
