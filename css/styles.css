@@ -248,6 +248,15 @@ a {
 .feature-list .item + .item {
   margin-left: 30px;
 }
+/* ocupation */
+.occupation-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.occupation-list .item:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
+}
 
 /* team */
 .team-list {
