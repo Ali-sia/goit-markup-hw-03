@@ -142,11 +142,6 @@ a {
   padding-right: 15px;
 }
 
-.team-conteiner {
-  margin-bottom: 0;
-  padding: 94px 0;
-}
-
 .portfolio-container {
   margin-bottom: 94px;
 }
@@ -259,10 +254,28 @@ a {
 }
 
 /* team */
+.team-conteiner {
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-list {
-  /* text-align: center; */
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.team-list .item:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
+}
+
+.team-list .item {
+  text-align: center;
+}
+
+.team-list .img {
+  margin-bottom: 30px;
 }
 
 .team-list .title {
@@ -283,9 +296,15 @@ a {
 
 /* portfolio photo  */
 .filt-list {
+  /* display: flex; */
+
   margin-top: 0;
   margin-bottom: 50px;
 }
+
+/* .filt-list .item {
+  justify-items: center;
+} */
 
 .portfolio-list {
   display: flex;
