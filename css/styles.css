@@ -17,6 +17,7 @@ font-style: normal; */
 /* текст лого (футер): синий - 2196F3 , белій - FFFFFF */
 /* тект (почта телефон)(футер): rgba(255, 255, 255, 0.6); */
 /* цвет фона футер: 2F303A */
+/* цвет границы главной навигации: #ECECEC */
 
 /* 
 logo: font-family: 'Raleway'; 700
@@ -39,6 +40,7 @@ h3: font-family: 'Roboto'; 500
   --footer-hover-color: rgba(33, 150, 243, 0.6);
   --dark-bgc: #2f303a;
   --button-navigation-color: #f5f4fa;
+  --border-nav-color: #ececec;
 }
 
 body {
@@ -90,6 +92,12 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+
+  border: 1xp solid var(--border-nav-color);
+}
+
+.header > .main-nav {
+  padding: 0 15px;
 }
 
 .site-nav {
@@ -144,13 +152,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 1200px; /*width: 1200px;*/
-  outline: 2px solid blue;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.portfolio-container {
-  margin-bottom: 94px;
+  /* outline: 2px solid blue; */
+  padding: 94px 15px;
 }
 
 /* logo decorstion */
@@ -179,7 +182,7 @@ img {
 /*hero section*/
 .hero {
   background-color: var(--dark-bgc);
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 
   text-align: center;
 }
@@ -211,11 +214,11 @@ img {
 }
 
 /* features */
-
+/* 
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 .feature-list {
   display: flex;
@@ -251,9 +254,13 @@ img {
   margin-left: 30px;
 }
 /* ocupation */
+.occupation {
+  padding: 0 15px 94px 15px;
+}
+
 .occupation-list {
   display: flex;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .occupation-list .item:not(:nth-last-child(-n + 1)) {
@@ -318,9 +325,6 @@ img {
 
 .portfolio {
   display: block;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .portfolio-list {
   display: flex;
